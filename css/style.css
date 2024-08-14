@@ -283,9 +283,11 @@ img {
   }
 }
 
-.about-list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width:768px) {
+  .about-list {
+    display: flex;
+   gap: 30px;
+  }
 }
 
 .about-item {
@@ -300,6 +302,13 @@ img {
 .about-item:focus {
   transform: translateY(-70px);
 }
+
+@media screen and (max-width:768px) {
+  .about-item:first-child{
+    margin-bottom: 20px;
+  }
+}
+
 
 .about .subtitle {
   font-size: 19px;
@@ -392,6 +401,7 @@ img {
 
 .item-second-part {
   display: flex;
+  gap: 10px;
 }
 
 .item-second-part:not(:last-child) {
